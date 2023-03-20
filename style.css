@@ -1,0 +1,106 @@
+html {
+  font-size: 22px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  /*background-color: rgba(0, 0, 255, 0.3);*/
+  background-image: url("josee.jpg");
+  filter: blur(0.3);
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+a {
+  color: black;
+}
+ul li a:hover {
+  background-color: red;
+}
+h1 {
+  text-shadow: 1.2px 1.1px black;
+  color: red;
+  box-shadow: 3px 4px 15px white;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  width: 50%;
+
+  animation: colored 4s infinite linear;
+  animation-fill-mode: forwards;
+  transition: width;
+  transition-duration: 10s;
+}
+@keyframes colored {
+  0% {
+    box-shadow: 3px 4px 15px red;
+  }
+  50% {
+    box-shadow: 3px 4px 15px blue;
+  }
+  100% {
+    box-shadow: 3px 4px 20px green;
+  }
+}
+h1:hover {
+  width: 60%;
+  transform: scale(1.2);
+}
+#time {
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  color: black;
+  font-weight: bolder;
+  text-shadow: 1px 1.2px teal;
+}
+blockquote {
+  position: fixed;
+  bottom: 0%;
+  left: 40%;
+  font-size: 30px;
+  top: 75vh;
+  padding: 5px;
+  font-family: cursive;
+  line-height: 4px;
+  font-weight: bold;
+}
+marquee {
+  text-shadow: 1.1px 1.2px white;
+  color: red;
+}
+hr {
+  width: 50%;
+  color: magenta;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  float: right;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 15px;
+  border-right-style: groove;
+  border-right-color: red;
+  border-width: 1px;
+  border-radius: 2px;
+  border: height 2px;
+}
+ul li {
+}
+table {
+  align-items: baseline;
+  padding: 0%;
+  white: space 2px;
+  width: fit-content;
+}
+
+img {
+  height: 10%;
+  width: min-content;
+  border-width: 1 px solid black;
+}
